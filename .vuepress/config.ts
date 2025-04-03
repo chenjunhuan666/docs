@@ -4,6 +4,8 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { webpackBundler } from "@vuepress/bundler-webpack";
 
 export default defineUserConfig({
+	// 设置base，避免github pages样式丢失，
+	base: "/docs/",
 	title: "title",
 	description: "Just playing around",
 	bundler: viteBundler(),
